@@ -32,7 +32,7 @@ In order to test the model under different conditions I tried to improve with Ha
 # Evaluation
 As we can see form the table below, the best performing model is always the one trained with random triplets (base model), while the ones trained with hard triplets have more difficulty, even with a bigger embedding space dimension.
 
-![image](http....)
+![image](https://github.com/daniele-marini/Metric_Learning/blob/main/imgs/accuracy_table.png)
 
 # Zero-shot learning
 
