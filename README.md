@@ -6,6 +6,8 @@ Project work for the "Machine Learning for Computer Vision" course of the Artifi
 The aim of the Project work is to explore the potential of a metric learning approach simulating an open word enviroment. The goal is to correctly classify images between more than 200 different classes. The classification is made through a metric learning approach, so relying on the distances between the images. In order to do that, after the creation and the training of a Siamese model, I used it to create an embedding space. 
 Finally, after several techniques to improve the efficiency of model, I tested it with unseen classes, in order to test his behaviour in a zero-shot learning enviroment.
 
+![image](https://github.com/daniele-marini/Metric_Learning/blob/main/imgs/cluster.png)
+
 # Dataset
 The dataset used for the task is the [”Mushrooms images classification 215” dataset](https://www.kaggle.com/datasets/daniilonishchenko/mushrooms-images-classification-215). 
 This dataset contains 3122 images (512x512) of 215 different classes, each one with approximately 12/15 images.
@@ -34,7 +36,13 @@ As we can see form the table below, the best performing model is always the one 
 
 ![image](https://github.com/daniele-marini/Metric_Learning/blob/main/imgs/accuracy_table.png)
 
-# Zero-shot learning
+# One-shot learning
+The 9 model created with the previous techniques have been tested on the last 15 unseen classes. In order to test it I added one unseen image in the embedding space and then I tested the other images of the same unseen class.
+
+The results were not particularly satisfactory, the best accuracy was given by the main model with 64 dimension embedding space, which obtaines around 20% or accuracy
+## K-shot learning
+Finally I tried to add three images instead on one.
+In this case the results as expected are slightly better, reaching the 28% of accuracy.
 
 # Conlusion
 In conclusion, metric learning has proven to be an effective approach for addressing clas- sification tasks, offering great adaptability through the application of one-shot learning in open-world scenarios. While right now metric learning finds predominant use in face recog- nition tasks, its potential extends to diverse fields.
