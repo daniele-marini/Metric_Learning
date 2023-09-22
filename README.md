@@ -39,7 +39,7 @@ As we can see form the table below, the best performing model is always the one 
 # Zero-shot learning
 The 9 model created with the previous techniques have been tested on the last 15 unseen classes. In order to test it I added one unseen image in the embedding space and then I tested the other images of the same unseen class.
 
-The results were not particularly satisfactory, the best accuracy was given by the main model with 64 dimension embedding space, which obtaines around **20% of accuracy**.
+The results were not particularly satisfactory, the best accuracy was given by the main model with 64 dimension embedding space, which obtained around **20% of accuracy**.
 ## K-shot learning
 Finally I tried to add three images instead on one.
 In this case the results as expected are slightly better, reaching the **28% of accuracy**.
