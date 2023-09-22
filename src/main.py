@@ -25,6 +25,9 @@ drive.mount('/content/drive')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"You are currently using: {device}")
 
+# IMPORT OF THE DATASET
+# if you are using colab you can use the following procedure which allow you not to dowload the entire dataset
+
 # load your kaggle.json file in the content of colab and then:
     # !pip -qq install kaggle
     # !mkdir ~/.kaggle
