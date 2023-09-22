@@ -113,7 +113,7 @@ model = torch.load('/content/drive/MyDrive/Mushroom/main_model.pdh',map_location
 # TRAINING HARD TRIPLET MODEL
 embedding_space = EmbeddingSpace(model, train_dataloader, device)
 
-mod='hard_negative' # or semi-hard or mixed-training or hard_positive_negative
+mod= 'hard_negative' # or semi-hard or mixed-training or hard_positive_negative
 hard_train_dataset = TripletDataset(train_dataset, model, embedding_space,modality=mod) #
 hard_val_dataset = TripletDataset(val_dataset, model, embedding_space,modality=mod)
 
@@ -158,7 +158,7 @@ show_closer(embedding_space,1618,dataset,denormalize) # 1618 is the index of the
 
 # EVALUATION
 
-model_name = 'main_model-pdh'
+model_name = 'main_model.pdh'
 
 # cluster evaluation
 cluster_acc = evaluate(model_name,full_dataloader,k=5)
