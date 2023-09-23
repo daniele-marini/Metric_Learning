@@ -23,7 +23,7 @@ def evaluate(model_name,dataloader,k):
   model_path = os.path.join(dir,model_name)
   model = torch.load(model_path,map_location=torch.device(device))
   embedding_space = EmbeddingSpace(model, dataloader, device,k)
-  return embedding_space.validate()
+  return embedding_space.centroid_accuracy()
 
 
 
