@@ -4,7 +4,7 @@ Project work for the "Machine Learning for Computer Vision" course of the Artifi
 
 # Task description
 The aim of the Project work is to explore the potential of a metric learning approach simulating an open word enviroment. The goal is to correctly classify images between more than 200 different classes. The classification is made through a metric learning approach, so relying on the distances between the images. In order to do that, after the creation and the training of a Siamese model, I used it to create an embedding space. 
-Finally, after several techniques to improve the efficiency of model, I tested it with unseen classes, in order to test his behaviour in a zero-shot learning enviroment.
+Finally, after several techniques to improve the efficiency of model, I tested it with unseen classes, in order to test his behaviour in a one-shot learning enviroment.
 
 ![image](https://github.com/daniele-marini/Metric_Learning/blob/main/imgs/cluster.png)
 
@@ -36,7 +36,7 @@ As we can see form the table below, the best performing model is always the one 
 
 ![image](https://github.com/daniele-marini/Metric_Learning/blob/main/imgs/accuracy_table.png)
 
-# Zero-shot learning
+# One-shot learning
 The 9 model created with the previous techniques have been tested on the last 15 unseen classes. In order to test it I added one unseen image in the embedding space and then I tested the other images of the same unseen class.
 
 The results were not particularly satisfactory, the best accuracy was given by the main model with 64 dimension embedding space, which obtained around **20% of accuracy**.
