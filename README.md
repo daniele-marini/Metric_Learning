@@ -11,7 +11,7 @@ Finally, after several techniques to improve the efficiency of model, I tested i
 # Dataset
 The dataset used for the task is the [”Mushrooms images classification 215” dataset](https://www.kaggle.com/datasets/daniilonishchenko/mushrooms-images-classification-215). 
 This dataset contains 3122 images (512x512) of 215 different classes, each one with approximately 12/15 images.
-The dataset have been used so as to allow the model to be used on unseen data, so the first 200 classes have been used for the training and the validation, while the remaining 15 for testing the zero-shot learning.
+The dataset have been used so as to allow the model to be used on unseen data, so the first 200 classes have been used for the training and the validation, while the remaining 15 for testing the one-shot learning.
 
 # Siamese model
 The model used for the creation of the embedding space is a Siamese model composed using as backbones two pretrained ResNet50 followed by a new classifier composed by 3 linear layers. 
